@@ -1,0 +1,324 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url(../image/header.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    min-height: 690px; 
+}
+.content{
+    width: 80%;
+    margin:0 auto;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding:25px 0 10px;
+    max-width: 1600px;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    margin:0 20px;
+    z-index: 1;
+}
+.a_list{
+    position: relative;
+}
+.a_list:hover:before{
+    -webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.a_list:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color:  rgba(27, 117, 187, 1);
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    transform:scaleX(0);
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+    
+}
+.a_header{
+    color:  rgba(8, 31, 50, 1);
+}
+.list{
+    display:flex;
+    flex-direction: row;
+}
+.button_header{
+    padding:20px 35px;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    background:  rgba(27, 117, 187, 1);
+}
+.button_header:hover{
+    background:  rgb(22, 95, 151);
+    cursor: pointer;
+}
+h3{
+    position: relative;
+    z-index: 1;
+    font-family: "gelasio";
+    color:rgba(8, 31, 50, 1);
+    font-size: 24px;
+    font-weight: 500;
+}
+.div_ico{
+    position: relative;
+}
+img .ico{
+    z-index: 0;
+}
+.ico{
+    position: absolute;
+    top:-50px;
+    left:-47px;
+    z-index: 0;
+}
+.a_list{
+    font-family: "gelasio";
+    color:rgba(8, 31, 50, 1);
+    font-size: 16px;
+}
+.a_list:hover{
+    color: rgba(27, 117, 187, 1);
+}
+.mid{
+    margin: 140px 0 0;
+    font-family: "roboto";
+    max-width: 456px;
+}
+p{
+    margin: 20px 0 20px;
+}
+.mid p:first-child{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color:    rgba(27, 117, 187, 1);
+}
+.mid p:last-child{
+    font-size: 18px;
+    font-style: normal;
+    font-weight:400;
+    color:rgba(8, 31, 50, 1);
+    max-width: 350px;
+    line-height: 30px;
+}
+.mid h1{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+}
+.mid h1 span{
+    color:    rgba(27, 117, 187, 1)
+}
+
+.div_bot{
+    margin:55px 30px 0;
+    max-width: 687px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px;
+    border:0px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+}
+.div_bot div{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.div_bot div span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color:black;
+}
+.second_page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:250px 0 0;
+    margin:0 0 200px;
+    position: relative;
+}
+.layer1{
+    position: absolute;
+    top:200px;
+    left:270px;
+    z-index: 0;
+}
+.layer2{
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.second_page p:first-child{
+    color:rgba(27, 117, 187, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.enjoy{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    margin:0 0 40px;
+}
+.dream{
+    max-width: 450px;
+}
+.group p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    padding:15px;
+}
+.group{
+    text-align: center;
+}
+h2{
+    margin:0 0 20px;
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin:50px 70px 50px;
+
+}
+.box div{
+    max-width: 262px;
+    justify-content:center ;
+    text-align: center;
+}
+.box div img{
+    margin:0 0 30px;
+}
+h4{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color:    rgba(8, 31, 50, 1);
+}
+.box div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.active:hover{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.room{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.div_room{
+    max-width: 555px;
+}
+.relative{
+    position: relative;
+    z-index: 0;
+}
+.room div img{
+    margin:15px 0 15px;
+    position: relative;
+}
+.room div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 555px;
+}
+.room div:first-child{
+    margin:80px 0 0;
+}
+.room div button{
+    margin:15px 0 0;
+}
+.absolute{
+    position: absolute;
+    width: 231px;
+    height: 126px;
+    z-index: 1;
+    top:146px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding:30px 20px 0;
+
+}
+.button_top{
+    padding:10px 18px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    background:  rgba(27, 117, 187, 1);
+}
+.button_top:hover{
+    background:  rgb(22, 95, 151);
+    cursor: pointer;
+}
+.span_first{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin:0 8px 0;
+}
+.span_second{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
