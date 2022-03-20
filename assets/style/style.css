@@ -25,6 +25,9 @@ ul li{
 }
 a{
     text-decoration: none;
+}
+.a_list{
+    text-decoration: none;
     margin:0 20px;
     z-index: 1;
 }
@@ -235,6 +238,8 @@ h2{
     max-width: 262px;
     justify-content:center ;
     text-align: center;
+    border: 0.2px solid rgb(206, 206, 206);
+    padding:10px;
 }
 .box div img{
     margin:0 0 30px;
@@ -321,4 +326,232 @@ h4{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+}
+.button_view{
+    padding:15px 30px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    background:  rgba(27, 117, 187, 1);
+    font-size: 25px;
+    margin:  0 0 70px;
+}
+.button_view:hover{
+    background:  rgb(22, 95, 151);
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 120px 80px 50px;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slider div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h5{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin:20px 0 0;
+}
+.slider div span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin:10px;
+} 
+.slider div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    text-align: center;
+    margin:20px;
+}
+.opass{
+    opacity: 0.7;
+}
+.opass:hover{
+    opacity:1;
+    cursor: pointer;
+}
+.div_input{
+    text-align: center;
+    margin:200px 0 0;
+}
+.div_input h3{
+    margin: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(8, 31, 50, 1);
+}
+.div_input h2{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+.mail{
+    margin:100px 0 200px;
+}
+.mail form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mail form input{
+    padding:5px 30px 5px;
+    text-align: left    ;
+    border: none;
+    border-radius: 3px;
+}
+.mail form button{
+    padding:10px 30px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    background:  rgba(27, 117, 187, 1);
+    font-size: 15px;
+}
+.mail form button:hover{
+    background:  rgb(22, 95, 151);
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:relative;
+    align-items: baseline;
+}
+.image_footer{
+    position: absolute;
+    top: -50px;
+    left: -25px;
+}
+.footer div p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin:20px 0 20px;
+}
+.footer div{
+    max-width: 250px;
+}
+.footer div ul li a{
+    position: relative;
+}
+.footer div ul li{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+.footer div ul li a:hover:before{
+    -webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.footer div ul li a:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color:  rgba(27, 117, 187, 1);
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    transform:scaleX(0);
+    transform-origin: left;
+    -webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: -webkit-transform 0.25s;
+	-o-transition: transform 0.25s;
+	transition: transform 0.25s;
+	transition: transform 0.25s, -webkit-transform 0.25s;
+    
+}
+.footer{
+    margin:0 0 50px;
+}
+
+.SUBSCRIBE{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+}
+.footer div ul li:first-child{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+}
+.footer div ul li a{
+        color:black;
+}
+
+
+.footer div ul li{
+    margin:15px 0 15px;
+}
+.footer div ul li:first-child{
+    margin:0 0 20px;
+}
+.div_footer img{
+    margin:0 8px 0;
+}
+.footer div form input{
+    padding: 10px 5px 10px;
+    text-align: left;
+    border: none;
+    border-radius: 3px;
+}
+.footer div form{
+    position:relative;
+    margin:30px 0 20px;
+}
+.footer div form button{
+padding:10px 30px;
+border:none;
+border-radius: 5px;
+color:white;
+background:  rgba(27, 117, 187, 1);
+font-size: 15px;
+cursor: pointer;
+position: absolute;
+left:170px;
+top:-1px;
+}
+.footer div form button:hover{
+background:  rgb(22, 95, 151);
+cursor: pointer;
 }
