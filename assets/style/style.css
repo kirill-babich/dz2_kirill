@@ -232,6 +232,7 @@ h2{
     display: flex;
     justify-content: space-around;
     margin:50px 70px 50px;
+    height:270px;
 
 }
 .box div{
