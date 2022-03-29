@@ -5,7 +5,7 @@
 }
 .background{
     background-image: url(../image/header.jpg);
-    background-size: cover;
+    background-size:cover;
     background-position: 100% 100%;
     min-height: 690px; 
 }
@@ -13,7 +13,7 @@
     width: 80%;
     margin:0 auto;
 }
-.choose__header{
+.choose-header{
     display:flex;
     justify-content: space-between;
     align-items:  center;
@@ -26,15 +26,16 @@ ul li{
 a{
     text-decoration: none;
 }
-.choose__header-a{
+.choose-header__a{
     text-decoration: none;
     margin:0 20px;
     z-index: 1;
+    color:black;
 }
-.choose__header-a{
+.choose-header__a{
     position: relative;
 }
-.choose__header-a:hover:before{
+.choose-header__a:hover:before{
     -webkit-transform: scaleX(1);
 	-ms-transform: scaleX(1);
 	transform: scaleX(1);
@@ -47,7 +48,7 @@ a{
 	transition: transform 0.25s;
 	transition: transform 0.25s, -webkit-transform 0.25s;
 }
-.choose__header-a:before{
+.choose-header__a:before{
     content: '';
     width: 100%;
     height: 1px;
@@ -70,21 +71,21 @@ a{
 	transition: transform 0.25s, -webkit-transform 0.25s;
     
 }
-.choose__top-text{
+.choose-header__text{
     color:  rgba(8, 31, 50, 1);
 }
-.choose__header-list{
+.choose-header__list{
     display:flex;
     flex-direction: row;
 }
-.choose__header-button{
+.choose-header__button{
     padding:20px 35px;
     border:none;
     border-radius: 10px;
     color:white;
     background:  rgba(27, 117, 187, 1);
 }
-.choose__header-button:hover{
+.choose-header__button:hover{
     background:  rgb(22, 95, 151);
     cursor: pointer;
 }
@@ -96,27 +97,27 @@ h3{
     font-size: 24px;
     font-weight: 500;
 }
-.choose__top{
+.choose-header__top{
     position: relative;
 }
-img .choose__top-ico{
+img .choose-header__ico{
     z-index: 0;
 }
-.choose__top-ico{
+.choose-header__ico{
     position: absolute;
     top:-50px;
     left:-47px;
     z-index: 0;
 }
-.choose__header-list{
+.choose-header__list{
     font-family: "gelasio";
     color:rgba(8, 31, 50, 1);
     font-size: 16px;
 }
-.choose__header-list:hover{
+.choose-header__list:hover{
     color: rgba(27, 117, 187, 1);
 }
-.choose__centre{
+.choose-centre{
     margin: 140px 0 0;
     font-family: "roboto";
     max-width: 456px;
@@ -124,14 +125,14 @@ img .choose__top-ico{
 p{
     margin: 20px 0 20px;
 }
-.choose__centre p:first-child{
+.choose-centre p:first-child{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     color:    rgba(27, 117, 187, 1);
 }
-.choose__centre p:last-child{
+.choose-centre p:last-child{
     font-size: 18px;
     font-style: normal;
     font-weight:400;
@@ -139,17 +140,17 @@ p{
     max-width: 350px;
     line-height: 30px;
 }
-.choose__centre h1{
+.choose-centre h1{
     font-family: 'Gelasio';
     font-style: normal;
     font-weight: 600;
     font-size: 57px;
 }
-.choose__centre h1 span{
+.choose-centre h1 span{
     color:    rgba(27, 117, 187, 1)
 }
 
-.choose__bot{
+.choose-bot{
     margin:55px 30px 0;
     max-width: 687px;
     display: flex;
@@ -161,20 +162,27 @@ p{
     backdrop-filter: blur(10px);
 
 }
-.choose__bot div{
+.choose-bot div{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
-.choose__bot div span{
+.choose-bot div span{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     color:black;
 }
-.second_page{
+    /* Addapt First*/
+    @media(min-width:320px) and (max-width:767.75px){
+        .choose-header{
+        max-width: 320px;
+    }
+    }
+
+.second-page{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -183,42 +191,42 @@ p{
     margin:0 0 200px;
     position: relative;
 }
-.layer1{
+.second-page__layer-first{
     position: absolute;
     top:200px;
     left:270px;
     z-index: 0;
 }
-.layer2{
+.second-page__layer-second{
     border-radius: 10px;
     z-index: 1;
     position: relative;
 }
-.second_page p:first-child{
+.second-page p:first-child{
     color:rgba(27, 117, 187, 1);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
 }
-.enjoy{
+.second-page__enjoy{
     font-family: 'Gelasio';
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     margin:0 0 40px;
 }
-.dream{
+.second-page__dream{
     max-width: 450px;
 }
-.group p{
+.choose-why p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     padding:15px;
 }
-.group{
+.choose-why{
     text-align: center;
 }
 h2{
@@ -228,21 +236,21 @@ h2{
     font-weight: 500;
     font-size: 32px;
 }
-.box{
+.choose-box{
     display: flex;
     justify-content: space-around;
     margin:50px 70px 50px;
     height:270px;
 
 }
-.box div{
+.choose-box div{
     max-width: 262px;
     justify-content:center ;
     text-align: center;
     border: 0.2px solid rgb(206, 206, 206);
     padding:10px;
 }
-.box div img{
+.choose-box div img{
     margin:0 0 30px;
 }
 h4{
@@ -252,18 +260,18 @@ h4{
     font-size: 24px;
     color:    rgba(8, 31, 50, 1);
 }
-.box div p{
+.choose-box div p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
 }
-.active:hover{
+.choose-box__active:hover{
     width: 100px;
     height: 100px;
     cursor: pointer;
 }
-.room{
+.choose-room{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -272,28 +280,28 @@ h4{
 .div_room{
     max-width: 555px;
 }
-.relative{
+.choose-room__relative{
     position: relative;
     z-index: 0;
 }
-.room div img{
+.choose-room div img{
     margin:15px 0 15px;
     position: relative;
 }
-.room div p{
+.choose-room div p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     max-width: 555px;
 }
-.room div:first-child{
+.choose-room div:first-child{
     margin:80px 0 0;
 }
-.room div button{
+.choose-room div button{
     margin:15px 0 0;
 }
-.absolute{
+.choose-room__absolute{
     position: absolute;
     width: 231px;
     height: 126px;
@@ -304,31 +312,31 @@ h4{
     padding:30px 20px 0;
 
 }
-.button_top{
+.choose-room__button{
     padding:10px 18px;
     border:none;
     border-radius: 5px;
     color:white;
     background:  rgba(27, 117, 187, 1);
 }
-.button_top:hover{
+.choose-room__button:hover{
     background:  rgb(22, 95, 151);
     cursor: pointer;
 }
-.span_first{
+.choose-room__span-first{
     font-family: 'Gelasio';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     margin:0 8px 0;
 }
-.span_second{
+.choose-room__span-second{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
 }
-.button_view{
+.question__button{
     padding:15px 30px;
     border:none;
     border-radius: 5px;
@@ -337,7 +345,7 @@ h4{
     font-size: 25px;
     margin:  0 0 70px;
 }
-.button_view:hover{
+.question__button:hover{
     background:  rgb(22, 95, 151);
     cursor: pointer;
 }
@@ -381,10 +389,10 @@ h5{
     text-align: center;
     margin:20px;
 }
-.opass{
+.slider__opass{
     opacity: 0.7;
 }
-.opass:hover{
+.slider__opass:hover{
     opacity:1;
     cursor: pointer;
 }
@@ -420,7 +428,7 @@ h5{
     border: none;
     border-radius: 3px;
 }
-.mail form button{
+.mail__button{
     padding:10px 30px;
     border:none;
     border-radius: 5px;
@@ -428,7 +436,7 @@ h5{
     background:  rgba(27, 117, 187, 1);
     font-size: 15px;
 }
-.mail form button:hover{
+.mail__button:hover{
     background:  rgb(22, 95, 151);
     cursor: pointer;
 }
@@ -439,7 +447,7 @@ h5{
     position:relative;
     align-items: baseline;
 }
-.image_footer{
+.footer__image{
     position: absolute;
     top: -50px;
     left: -25px;
