@@ -7,14 +7,15 @@
     background-image: url(../image/header.jpg);
     background-size:cover;
     background-position: 100% 100%;
-    min-height: 690px; 
+    max-height: 690px; 
 }
 .content{
-    width: 80%;
+    max-width: 1200px;
     margin:0 auto;
 }
 .choose-header{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items:  center;
     padding:25px 0 10px;
@@ -77,15 +78,16 @@ a{
 .choose-header__list{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
-.choose-header__button{
+.button{
     padding:20px 35px;
     border:none;
     border-radius: 10px;
     color:white;
     background:  rgba(27, 117, 187, 1);
 }
-.choose-header__button:hover{
+.button:hover{
     background:  rgb(22, 95, 151);
     cursor: pointer;
 }
@@ -154,6 +156,7 @@ p{
     margin:55px 30px 0;
     max-width: 687px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content:space-between ;
     padding: 20px;
@@ -175,12 +178,65 @@ p{
     font-size: 16px;
     color:black;
 }
-    /* Addapt First*/
+    /* Addapt*/
     @media(min-width:320px) and (max-width:767.75px){
-        .choose-header{
-        max-width: 320px;
+        html{
+        max-width: 767px;
     }
+    .content{
+        padding: 10px;
     }
+    p{
+        margin:10px 0 10px;
+    }
+    .second-page__layer-first{
+        display: none;
+        max-width: 300px;
+        left:1px;
+    }
+    .choose-centre{
+        margin:100px 0 0;
+    }
+    .second-page__layer-second{
+        max-width:300px;
+    }
+    .images{
+        max-width: 300px;
+    }
+    .choose-header{
+        justify-content: space-around;
+    }
+    .choose-header__list{
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .choose-centre h1 {
+        font-size: 30px;
+
+    }
+    .second-page{
+        padding: 50px 0 0;
+        margin: 0 0 50px;
+    }
+    .choose-box__active{
+        height: 40px;
+        width: 40px;
+    }
+    .choose-box{
+        max-width:100px;
+        flex-wrap: nowrap;
+    }
+    .choose-box div{
+        width:120px;
+        padding: 100px 0 1px;
+    }
+    .choose-box div h4{
+        font-size: 12px;
+    }
+    .choose-box div p{
+        font-size: 12px;
+    }
+}
 
 .second-page{
     display: flex;
@@ -238,6 +294,7 @@ h2{
 }
 .choose-box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin:50px 70px 50px;
     height:270px;
