@@ -179,65 +179,7 @@ p{
     color:black;
 }
     /* Addapt*/
-    @media(min-width:320px) and (max-width:767.75px){
-        html{
-        max-width: 767px;
-    }
-    .content{
-        padding: 10px;
-    }
-    p{
-        margin:10px 0 10px;
-    }
-    .second-page__layer-first{
-        display: none;
-        max-width: 300px;
-        left:1px;
-    }
-    .choose-centre{
-        margin:100px 0 0;
-    }
-    .second-page__layer-second{
-        max-width:300px;
-    }
-    .images{
-        max-width: 300px;
-    }
-    .choose-header{
-        justify-content: space-around;
-    }
-    .choose-header__list{
-        justify-content: space-around;
-        padding: 20px;
-    }
-    .choose-centre h1 {
-        font-size: 30px;
-
-    }
-    .second-page{
-        padding: 50px 0 0;
-        margin: 0 0 50px;
-    }
-    .choose-box__active{
-        height: 40px;
-        width: 40px;
-    }
-    .choose-box{
-        max-width:100px;
-        flex-wrap: nowrap;
-    }
-    .choose-box div{
-        width:120px;
-        padding: 100px 0 1px;
-    }
-    .choose-box div h4{
-        font-size: 12px;
-    }
-    .choose-box div p{
-        font-size: 12px;
-    }
-}
-
+    
 .second-page{
     display: flex;
     flex-wrap: wrap;
@@ -250,7 +192,7 @@ p{
 .second-page__layer-first{
     position: absolute;
     top:200px;
-    left:270px;
+    left:220px;
     z-index: 0;
 }
 .second-page__layer-second{
@@ -408,12 +350,14 @@ h4{
 }
 .question{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 120px 80px 50px;
 }
 .slider{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -476,6 +420,7 @@ h5{
 }
 .mail form{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
@@ -500,6 +445,7 @@ h5{
 .footer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     position:relative;
     align-items: baseline;
@@ -595,17 +541,14 @@ h5{
 .div_footer img{
     margin:0 8px 0;
 }
-.footer div form input{
+
+.footer__form form input{
     padding: 10px 5px 10px;
     text-align: left;
     border: none;
     border-radius: 3px;
 }
-.footer div form{
-    position:relative;
-    margin:30px 0 20px;
-}
-.footer div form button{
+.button_mail{
 padding:10px 30px;
 border:none;
 border-radius: 5px;
@@ -613,12 +556,90 @@ color:white;
 background:  rgba(27, 117, 187, 1);
 font-size: 15px;
 cursor: pointer;
-position: absolute;
-left:170px;
-top:-1px;
 }
-.footer div form button:hover{
+.button_mail:hover{
 background:  rgb(22, 95, 151);
 cursor: pointer;
 
+}
+@media(min-width:320px) and (max-width:767.75px){
+    html{
+    max-width: 767px;
+}
+.content{
+    padding: 10px;
+}
+h2{
+    font-size: 28px;
+}
+p{
+    margin:10px 0 10px;
+}
+.second-page__layer-first{
+    display: none;
+    max-width: 300px;
+    left:1px;
+}
+.choose-centre{
+    margin:100px 0 0;
+}
+.second-page__layer-second{
+    max-width:300px;
+}
+img{
+    max-width: 300px;
+    z-index: 0;
+}
+.images{
+    max-width: 300px;
+}
+.choose-header{
+    justify-content: space-around;
+}
+.choose-header__list{
+    justify-content: space-around;
+    padding: 20px;
+}
+.choose-centre h1 {
+    font-size: 30px;
+
+}
+.second-page{
+    padding: 150px 0 0;
+    margin: 0 0 50px;
+}
+.choose-box__active{
+    height: 30px;
+    width: 30px;
+}
+.choose-box{
+    max-width:250px;
+    margin:0 auto;
+    padding:0 0 850px;
+
+}
+.choose-box div{
+    height: 200px;
+    margin:5px;
+}
+.choose-box div h4{
+    font-size: 12px;
+}
+.choose-box__text{
+    font-size: 10px;
+}
+.choose-room div:first-child{
+    margin:0;
+}
+.choose-room{
+    gap:70px;
+}
+.footer{
+    gap:50px;
+}
+.footer__form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }
